@@ -29,7 +29,7 @@ const Column = styled.div`
 
 const Value = styled.p``
 
-const ProfileText: React.VFC = () => {
+export const ProfileText: React.VFC = () => {
   return (
     <Wrapper>
       <SummaryTextWrapper>
@@ -77,5 +77,3 @@ const ProfileText: React.VFC = () => {
     </Wrapper>
   )
 }
-
-export default ProfileText

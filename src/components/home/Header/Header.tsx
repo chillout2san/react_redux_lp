@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from './notebook.svg'
-import ProfileCard from './parts/ProfileCard'
-import ProfileText from './parts/ProfileText'
+import { ProfileCard } from './parts/ProfileCard'
+import { ProfileText } from './parts/ProfileText'
 
 const Wrapper = styled.div`
   width: 1200px;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `
 
-const Header: React.VFC = () => {
+export const Header: React.VFC = () => {
   return (
     <Wrapper>
       <ProfileCard />
@@ -23,5 +23,3 @@ const Header: React.VFC = () => {
     </Wrapper>
   )
 }
-
-export default Header

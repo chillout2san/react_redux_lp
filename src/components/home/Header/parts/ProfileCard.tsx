@@ -32,7 +32,7 @@ const Job = styled.p`
   text-align: center;
 `
 
-const ProfileCard: React.VFC = () => {
+export const ProfileCard: React.VFC = () => {
   return (
     <Wrapper>
       <CirclePicture url={img} />
@@ -43,5 +43,3 @@ const ProfileCard: React.VFC = () => {
     </Wrapper>
   )
 }
-
-export default ProfileCard

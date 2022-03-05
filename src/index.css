@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* destyle.cssを適用 */
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -248,12 +248,12 @@ textarea {
  * Reset radio and checkbox appearance to preserve their look in iOS.
  */
 
-[type="checkbox"] {
+[type='checkbox'] {
   -webkit-appearance: checkbox;
   appearance: checkbox;
 }
 
-[type="radio"] {
+[type='radio'] {
   -webkit-appearance: radio;
   appearance: radio;
 }
@@ -263,16 +263,16 @@ textarea {
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   cursor: pointer;
 }
 
 button:disabled,
-[type="button"]:disabled,
-[type="reset"]:disabled,
-[type="submit"]:disabled {
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled {
   cursor: default;
 }
 
@@ -330,8 +330,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -339,7 +339,7 @@ textarea {
  * 1. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   outline-offset: -2px; /* 1 */
 }
 
@@ -347,7 +347,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -425,5 +425,5 @@ th {
 
 /* フォントを設定 */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }

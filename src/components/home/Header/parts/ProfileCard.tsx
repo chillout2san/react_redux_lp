@@ -2,15 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { CirclePicture } from '../../../common/CircularPicture'
 import img from './person.svg'
+import { Text } from '../../../common/Text'
 
 const Wrapper = styled.div`
   width: 275px;
   height: 276px;
   border: 1px solid #ffffff;
   padding: 30px 0px;
-  position: absolute;
-  top: 74px;
-  left: 93px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -34,7 +32,7 @@ const Job = styled.p`
   text-align: center;
 `
 
-const Header: React.VFC = () => {
+const ProfileCard: React.VFC = () => {
   return (
     <Wrapper>
       <CirclePicture url={img} />
@@ -46,4 +44,4 @@ const Header: React.VFC = () => {
   )
 }
 
-export default Header
+export default ProfileCard

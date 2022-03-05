@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "language": "JavaScript",
+      "star": "4",
+      "comment": "ES6,TypeScript"
+    },
+    {
+      "language": "HTML / CSS",
+      "star": "4",
+      "comment": ""
+    },
+    {
+      "language": "Node.js",
+      "star": "2",
+      "comment": "Node.js"
+    },
+    {
+      "language": "PHP",
+      "star": "3",
+      "comment": "かつてよく書いた"
+    },
+    {
+      "language": "Java",
+      "star": "2",
+      "comment": "既存システムの保守に2年ほど従事"
+    },
+    {
+      "language": "Ruby",
+      "star": "1",
+      "comment": "機会があればちょこっと書く程度"
+    },
+    {
+      "language": "React + Redux",
+      "star": "3",
+      "comment": "Styled-component,Storybook"
+    },
+    {
+      "language": "CakePHP",
+      "star": "2",
+      "comment": ""
+    },
+    {
+      "language": "WordPress",
+      "star": "3",
+      "comment": "テーマ・プラグイン開発など"
+    },
+    {
+      "language": "Action Script",
+      "star": "4",
+      "comment": "数多くの実績を積みました"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import Social from '../components/home/social/Social'
 
 const Wrapper = styled.div`
   width: 1200px;
-  height: 3412px;
+  height: 3348px;
   margin: 0 auto;
 `
 

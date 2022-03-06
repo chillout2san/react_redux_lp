@@ -8,7 +8,7 @@ import ThirdWork from './parts/ThirdWork.svg'
 
 const Wrapper = styled.div`
   width: 1200px;
-  height: 869px;
+  height: 805px;
   padding: 120px 157.5px;
 `
 

@@ -6,7 +6,7 @@ import { Interest } from './parts/Interest'
 
 const Wrapper = styled.div`
   width: 1200px;
-  height: 673px;
+  height: 672px;
   padding: 122px 28px 86px 27px;
 `
 

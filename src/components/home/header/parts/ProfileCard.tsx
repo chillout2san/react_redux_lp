@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { CirclePicture } from '../../../common/CircularPicture'
 import img from './person.svg'
-import { Text } from '../../../common/Text'
 
 const Wrapper = styled.div`
   width: 275px;

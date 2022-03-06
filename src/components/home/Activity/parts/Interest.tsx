@@ -64,7 +64,7 @@ export const Interest: React.VFC = () => {
       <FlexWrapper>
         {interests.map((interest) => {
           return (
-            <PictureTextWrapper>
+            <PictureTextWrapper key={interest.interest}>
               <InterestPicture url={interest.interest} />
               <Text
                 color="#000000"

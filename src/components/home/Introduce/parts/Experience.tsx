@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { IconHeader } from '../../../common/IconHeader'
 import { Text } from '../../../common/Text'
+import HumanIcon from './human.svg'
+import { Circle, Line } from './Element'
 
 const Wrapper = styled.div`
   width: 554px;
@@ -22,29 +24,10 @@ const SharpWrapper = styled.div`
   margin-right: 18px;
 `
 
-const Circle = styled.div`
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #c4c4c4;
-  margin: 0px auto 3px auto;
-`
-
-interface LineProps {
-  height: string
-}
-
-const Line = styled.div`
-  width: 1px;
-  height: ${(props: LineProps) => props.height};
-  background: #c4c4c4;
-  margin: 0 auto 3px auto;
-`
-
 export const Experience: React.VFC = () => {
   return (
     <Wrapper>
-      <IconHeader title="EXPERIENCE" />
+      <IconHeader title="EXPERIENCE" icon={HumanIcon} />
       <FlexWrapper>
         <SharpWrapper>
           <Circle />

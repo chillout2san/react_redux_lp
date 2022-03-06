@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import HumanIcon from './human.svg'
 import { Text } from './Text'
 
 interface IconHeaderProps {
   title: string
+  icon: string
 }
 
 const Wrapper = styled.div`
@@ -37,7 +37,7 @@ export const IconHeader = (props: IconHeaderProps) => {
   return (
     <Wrapper>
       <IconTextWrapper>
-        <Icon src={HumanIcon} alt="人間の形をしたアイコン" />
+        <Icon src={props.icon} alt="人間の形をしたアイコン" />
         <Text color="#00A1AB" size="16px" weight="700">
           {props.title}
         </Text>

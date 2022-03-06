@@ -3,101 +3,97 @@ import styled from 'styled-components'
 import { IconHeader } from '../../../common/IconHeader'
 import { Text } from '../../../common/Text'
 import HumanIcon from './human.svg'
-import { Circle, Line } from './Element'
+import { RankCircle } from './RankCircle'
 
 const Wrapper = styled.div`
   width: 554px;
   height: 600px;
 `
 
-const FlexWrapper = styled.div`
-  display: flex;
-`
-
 const TextWrapper = styled.div`
-  width: 522px;
+  width: 107px;
+  margin-right: 65px;
 `
 
-const SharpWrapper = styled.div`
-  width: 14px;
-  margin-top: 9px;
-  margin-right: 18px;
+const FlexWrapper = styled.div`
+  margin-left: 32px;
+  width: 522px;
+  display: flex;
+  align-items: center;
 `
+
+const json = [
+  {
+    language: 'JavaScript',
+    star: '4',
+    comment: 'ES6,TypeScript',
+  },
+  {
+    language: 'HTML / CSS',
+    star: '4',
+    comment: '',
+  },
+  {
+    language: 'Node.js',
+    star: '2',
+    comment: 'Node.js',
+  },
+  {
+    language: 'PHP',
+    star: '3',
+    comment: 'かつてよく書いた',
+  },
+  {
+    language: 'Java',
+    star: '2',
+    comment: '既存システムの保守に2年ほど従事',
+  },
+  {
+    language: 'Ruby',
+    star: '1',
+    comment: '機会があればちょこっと書く程度',
+  },
+  {
+    language: 'React + Redux',
+    star: '3',
+    comment: 'Styled-component,Storybook',
+  },
+  {
+    language: 'CakePHP',
+    star: '2',
+    comment: '',
+  },
+  {
+    language: 'WordPress',
+    star: '3',
+    comment: 'テーマ・プラグイン開発など',
+  },
+  {
+    language: 'Action Script',
+    star: '4',
+    comment: '数多くの実績を積みました',
+  },
+]
 
 export const Skill: React.VFC = () => {
   return (
     <Wrapper>
-      <IconHeader title="EXPERIENCE" icon={HumanIcon} />
-      <FlexWrapper>
-        <SharpWrapper>
-          <Circle />
-          <Line height="74px" />
-          <Circle />
-          <Line height="136px" />
-          <Circle />
-          <Line height="94px" />
-          <Circle />
-        </SharpWrapper>
-        <TextWrapper>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            フロントエンジニア | 2019.01 -
-          </Text>
-          <Text
-            color="#515151"
-            size="16px"
-            weight="700"
-            height="28px"
-            mb="28px"
-          >
-            ベースコネクト株式会社
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            ウェブデザイナー | 2008.08 - 2018.12
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            株式会社 クエステトラ
-          </Text>
-          <Text color="#515151" size="14px" weight="400" height="21px">
-            Saasワークフローシステムのサービス開発ベンチャー。
-          </Text>
-          <Text color="#515151" size="14px" weight="400" height="21px">
-            サービス立ち上げに参画。
-          </Text>
-          <Text
-            color="#515151"
-            size="14px"
-            weight="400"
-            height="21px"
-            mb="28px"
-          >
-            UI/UXの改善に取り組んだ。
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            ウェブデザイナー | 2000.04 - 2008.12
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            株式会社 アートスタッフ
-          </Text>
-          <Text
-            color="#515151"
-            size="14px"
-            weight="400"
-            height="21px"
-            mb="28px"
-          >
-            大学などの教育関連向けに、広報サイト、システムを制作、開発。
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            デザイナー | 1994.04 - 1998.10
-          </Text>
-          <Text color="#515151" size="16px" weight="700" height="28px">
-            株式会社 タカオ
-          </Text>
-          <Text color="#515151" size="14px" weight="400" height="21px">
-            公園遊具メーカー。デザイナーとして従事。
-          </Text>
-        </TextWrapper>
-      </FlexWrapper>
+      <IconHeader title="SKILL" icon={HumanIcon} />
+      {json.map((json) => {
+        return (
+          <FlexWrapper>
+            <TextWrapper>
+              <Text color="#515151" size="14px" weight="700" height="28px">
+                {json.language}
+              </Text>
+            </TextWrapper>
+            <RankCircle star={json.star}/>
+            <Text color="#515151" size="14px" weight="500" height="28px">
+              {json.comment}
+            </Text>
+          </FlexWrapper>
+        )
+      })}
     </Wrapper>
   )
 }

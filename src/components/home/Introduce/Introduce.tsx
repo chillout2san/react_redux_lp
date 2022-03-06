@@ -9,6 +9,15 @@ const Wrapper = styled.div`
   height: 1160px;
   background: #f7f7f7;
   padding: 114px 30px 100px 30px;
+`
+
+const UpperWrapper = styled.div`
+  height: 560px;
+  display: flex;
+  justify-content: space-between;
+`
+
+const LowerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `
@@ -16,9 +25,13 @@ const Wrapper = styled.div`
 export const Introduce: React.VFC = () => {
   return (
     <Wrapper>
-      <Experience />
-      <Education />
-      <Skill />
+      <UpperWrapper>
+        <Experience />
+        <Education />
+      </UpperWrapper>
+      <LowerWrapper>
+        <Skill />
+      </LowerWrapper>
     </Wrapper>
   )
 }

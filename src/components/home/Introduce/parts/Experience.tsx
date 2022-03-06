@@ -7,7 +7,6 @@ import { Circle, Line } from './Element'
 
 const Wrapper = styled.div`
   width: 554px;
-  height: 600px;
 `
 
 const FlexWrapper = styled.div`

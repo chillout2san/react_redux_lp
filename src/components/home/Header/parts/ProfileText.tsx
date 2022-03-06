@@ -27,8 +27,6 @@ const Column = styled.div`
   margin-right: 20px;
 `
 
-const Value = styled.p``
-
 export const ProfileText: React.VFC = () => {
   return (
     <Wrapper>
@@ -62,7 +60,7 @@ export const ProfileText: React.VFC = () => {
             現住所
           </Text>
         </Column>
-        <Value>
+        <div>
           <Text color="#FFFFFF" size="14px" weight="500">
             男性
           </Text>
@@ -72,7 +70,7 @@ export const ProfileText: React.VFC = () => {
           <Text color="#FFFFFF" size="14px" weight="500">
             大阪府茨木市
           </Text>
-        </Value>
+        </div>
       </TableWrapper>
     </Wrapper>
   )

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { isPropertySignature } from 'typescript'
 
 export const CircleGraphElement = styled.div`
   //文字をセンターにするためにflexboxを使用
@@ -13,7 +12,7 @@ export const CircleGraphElement = styled.div`
   font-size: 26px;
   font-weight: 700;
   background-image: radial-gradient(#f7f7f7 60%, transparent 61%),
-    conic-gradient(#80cbc7 0%, #4ba3ac 35%, #80cbc7 75%, #515151 75% 100%);
+    conic-gradient(#61cfc8 0%, #00a1ab 35%, #61cfc8 75%, #515151 75% 100%);
   border-radius: 50%;
 `
 

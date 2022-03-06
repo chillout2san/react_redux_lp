@@ -8,7 +8,8 @@ import {
   CircleGraphElement,
   ToolTipElement,
   ToolTipArrow,
-} from './GraphElement'
+} from './CircleGraphElement'
+import { BarGraphElement } from './BarGraphElement'
 
 const Wrapper = styled.div`
   width: 554px;
@@ -45,11 +46,40 @@ const CircleGraphWrapper = styled.div`
 const BarGraphWrapper = styled.div`
   width: 297px;
   height: 149px;
-  background: black;
+`
+
+const SingleBar = styled.div`
+  width: 297px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
 `
 
 export const PersonalQualities: React.VFC = () => {
   const [isHover, setIsHover] = useState(false)
+  const graphArray = [
+    {
+      text: 'text',
+      percent: '80%',
+    },
+    {
+      text: 'text-1',
+      percent: '70%',
+    },
+    {
+      text: 'text-2',
+      percent: '65%',
+    },
+    {
+      text: 'text-3',
+      percent: '50%',
+    },
+    {
+      text: 'text',
+      percent: '30%',
+    },
+  ]
   return (
     <Wrapper>
       <IconHeader title="PERSONAL QUALITIES" icon={HumanIcon} />
@@ -84,7 +114,29 @@ export const PersonalQualities: React.VFC = () => {
             </Text>
           </ToolTipElement>
         </CircleGraphWrapper>
-        <BarGraphWrapper />
+
+        <BarGraphWrapper>
+          {graphArray.map((graph) => {
+            return (
+              <SingleBar>
+                <Text
+                  color="#000000"
+                  size="14px"
+                  weight="500"
+                  align="end"
+                  width="37px"
+                >
+                  {graph.text}
+                </Text>
+                <BarGraphElement percent={graph.percent}>
+                  <Text color="#f7f7f7" size="10px" weight="500">
+                    {graph.percent}
+                  </Text>
+                </BarGraphElement>
+              </SingleBar>
+            )
+          })}
+        </BarGraphWrapper>
       </GraphWrapper>
     </Wrapper>
   )

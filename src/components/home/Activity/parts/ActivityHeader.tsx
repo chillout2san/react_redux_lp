@@ -3,18 +3,19 @@ import styled from 'styled-components'
 import { Text } from '../../../common/Text'
 
 const Wrapper = styled.div`
-  width: 885px;
-  height: 143px;
+  width: 1145px;
+  height: 78px;
+  margin-bottom: 67px;
 `
 
-export const WorksHeader: React.VFC = () => {
+export const ActivityHeader: React.VFC = () => {
   return (
     <Wrapper>
       <Text color="#515151" size="40px" weight="700" mb="14px" align="center">
-        WORKS
+        ACTIVITY
       </Text>
-      <Text color="#515151" size="16px" weight="500" align="center" >
-        制作実績など
+      <Text color="#515151" size="16px" weight="500" align="center">
+        活動
       </Text>
     </Wrapper>
   )

@@ -31,13 +31,13 @@ export const ProfileText: React.VFC = () => {
   return (
     <Wrapper>
       <SummaryTextWrapper>
-        <Text color="#FFFFFF" size="14px" weight="400">
+        <Text color="#FFFFFF" size="14px" weight="400" height="28px">
           デザイン、コーディング、UI/UXなど、Web周辺の業務に20年。コーディング大好き。
         </Text>
-        <Text color="#FFFFFF" size="14px" weight="400">
+        <Text color="#FFFFFF" size="14px" weight="400" height="28px">
           現在、サービスベンダー・ベンチャーにて、自立分散協調型のデザインチームと、デザイン文化
         </Text>
-        <Text color="#FFFFFF" size="14px" weight="400">
+        <Text color="#FFFFFF" size="14px" weight="400" height="28px">
           醸成にチャレンジ中。
         </Text>
       </SummaryTextWrapper>
@@ -50,24 +50,24 @@ export const ProfileText: React.VFC = () => {
 
       <TableWrapper>
         <Column>
-          <Text color="#FFFFFF" size="14px" weight="700">
+          <Text color="#FFFFFF" size="14px" weight="700" height="28px">
             性別
           </Text>
-          <Text color="#FFFFFF" size="14px" weight="700">
+          <Text color="#FFFFFF" size="14px" weight="700" height="28px">
             青年月日
           </Text>
-          <Text color="#FFFFFF" size="14px" weight="700">
+          <Text color="#FFFFFF" size="14px" weight="700" height="28px">
             現住所
           </Text>
         </Column>
         <div>
-          <Text color="#FFFFFF" size="14px" weight="500">
+          <Text color="#FFFFFF" size="14px" weight="500" height="28px">
             男性
           </Text>
-          <Text color="#FFFFFF" size="14px" weight="500">
+          <Text color="#FFFFFF" size="14px" weight="500" height="28px">
             1971年6月1日(48歳)
           </Text>
-          <Text color="#FFFFFF" size="14px" weight="500">
+          <Text color="#FFFFFF" size="14px" weight="500" height="28px">
             大阪府茨木市
           </Text>
         </div>

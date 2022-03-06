@@ -118,7 +118,7 @@ export const PersonalQualities: React.VFC = () => {
         <BarGraphWrapper>
           {graphArray.map((graph) => {
             return (
-              <SingleBar>
+              <SingleBar key={graph.percent + graph.text}>
                 <Text
                   color="#000000"
                   size="14px"

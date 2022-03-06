@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Experience } from './parts/Experience'
 import { Education } from './parts/Education'
 import { Skill } from './parts/Skill'
+import { PersonalQualities } from './parts/PersonalQualities'
 
 const Wrapper = styled.div`
   width: 1200px;
@@ -31,6 +32,7 @@ export const Introduce: React.VFC = () => {
       </UpperWrapper>
       <LowerWrapper>
         <Skill />
+        <PersonalQualities />
       </LowerWrapper>
     </Wrapper>
   )

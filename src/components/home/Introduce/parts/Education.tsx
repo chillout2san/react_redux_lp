@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { IconHeader } from '../../../common/IconHeader'
 import { Text } from '../../../common/Text'
 import HumanIcon from './human.svg'
-import { Circle, Line } from './Element'
+import { Circle, Line } from './SharpElement'
 
 const Wrapper = styled.div`
   width: 554px;

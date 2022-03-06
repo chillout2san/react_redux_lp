@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { IconHeader } from '../../../common/IconHeader'
 import { Text } from '../../../common/Text'

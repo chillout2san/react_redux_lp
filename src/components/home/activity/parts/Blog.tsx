@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { IconHeader } from '../../../common/IconHeader'
 import { Text } from '../../../common/Text'
 import PencilIcon from './pencil.svg'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Wrapper = styled.div`
   width: 554px;
@@ -20,6 +20,7 @@ const FlexWrapper = styled.div`
   width: 522px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `
 
 const articles = [
@@ -42,23 +43,26 @@ const articles = [
 ]
 
 export const Blog: React.VFC = () => {
+  const navigate = useNavigate()
+  const goToWork = () => {
+    navigate('/work')
+    window.scroll(0, 0)
+  }
   return (
     <Wrapper>
       <IconHeader title="BLOG" icon={PencilIcon} />
       {articles.map((article) => {
         return (
-          <Link to="/work" key={article.date}>
-            <FlexWrapper>
-              <TextWrapper>
-                <Text color="#515151" size="14px" weight="500" height="28px">
-                  {article.date}
-                </Text>
-              </TextWrapper>
-              <Text color="#EF75BE" size="14px" weight="700" height="28px">
-                {article.title}
+          <FlexWrapper key={article.date} onClick={goToWork}>
+            <TextWrapper>
+              <Text color="#515151" size="14px" weight="500" height="28px">
+                {article.date}
               </Text>
-            </FlexWrapper>
-          </Link>
+            </TextWrapper>
+            <Text color="#EF75BE" size="14px" weight="700" height="28px">
+              {article.title}
+            </Text>
+          </FlexWrapper>
         )
       })}
     </Wrapper>

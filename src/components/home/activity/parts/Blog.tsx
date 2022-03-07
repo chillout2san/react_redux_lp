@@ -45,8 +45,8 @@ const articles = [
 export const Blog: React.VFC = () => {
   const navigate = useNavigate()
   const goToWork = () => {
+    // ブログ記事に遷移してからブラウザバックした際はscrollしない方が見やすい。
     navigate('/work')
-    window.scroll(0, 0)
   }
   return (
     <Wrapper>

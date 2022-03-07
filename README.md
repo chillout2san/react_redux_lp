@@ -1,7 +1,7 @@
 ### 動作確認手順
 
 1. `git clone https://github.com/chillout2san/react_redux_lp.git`
-2. `cd react_redux_lp_master`
+2. `cd react_redux_lp`
 3. `yarn install`
 4. `yarn start`
 

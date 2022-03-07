@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { WorksHeader } from './parts/WorksHeader'
-import { WorksContent } from './parts/WorksContent'
+import { PictureCard } from '../../common/PictureCard'
 import FirstWork from './parts/FirstWork.svg'
 import SecondWork from './parts/SecondWork.svg'
 import ThirdWork from './parts/ThirdWork.svg'
@@ -24,17 +24,17 @@ export const Works: React.VFC = () => {
     <Wrapper>
       <WorksHeader />
       <ContentWrapper>
-        <WorksContent
+        <PictureCard
           path={FirstWork}
           header="MusubuLP"
           paragraph="Coding/Gatsby"
         />
-        <WorksContent
+        <PictureCard
           path={SecondWork}
           header="MusubuLP"
           paragraph="Coding/Gatsby"
         />
-        <WorksContent
+        <PictureCard
           path={ThirdWork}
           header="MusubuLP"
           paragraph="Coding/Gatsby"

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Text } from '../../../common/Text'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Wrapper = styled.div`
   width: 275px;
@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 `
 
 interface WorkProps {
@@ -42,18 +43,21 @@ interface WorksContentProps {
 }
 
 export const WorksContent: React.VFC<WorksContentProps> = (props) => {
+  const navigate = useNavigate()
+  const goToWork = () => {
+    navigate('/work')
+    window.scroll(0, 0)
+  }
   return (
-    <Link to="/work">
-      <Wrapper>
-        <WorkPicture url={props.path} />
-        <Text color="#000000" size="16px" weight="700" mb="10px">
-          {props.header}
-        </Text>
-        <Text color="#000000" size="14px" weight="400" mb="45px">
-          {props.paragraph}
-        </Text>
-        <Arrow />
-      </Wrapper>
-    </Link>
+    <Wrapper onClick={goToWork}>
+      <WorkPicture url={props.path} />
+      <Text color="#000000" size="16px" weight="700" mb="10px">
+        {props.header}
+      </Text>
+      <Text color="#000000" size="14px" weight="400" mb="45px">
+        {props.paragraph}
+      </Text>
+      <Arrow />
+    </Wrapper>
   )
 }

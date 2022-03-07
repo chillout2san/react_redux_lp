@@ -65,7 +65,7 @@ export const ProfileText: React.VFC = () => {
             男性
           </Text>
           <Text color="#FFFFFF" size="14px" weight="500" height="28px">
-            1971年6月1日(48歳)
+            1971年06月01日(48歳)
           </Text>
           <Text color="#FFFFFF" size="14px" weight="500" height="28px">
             大阪府茨木市

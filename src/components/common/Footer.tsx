@@ -10,6 +10,7 @@ const FooterWrapper = styled.footer`
 `
 
 const Circle = styled.div`
+  padding-top: 8px;
   width: 64px;
   height: 64px;
   background: #ef75be;
@@ -24,10 +25,10 @@ const Circle = styled.div`
 `
 
 const Arrow = styled.div`
-  border-top: solid 6px #ffffff;
-  border-right: solid 6px #ffffff;
-  width: 14px;
-  height: 14px;
+  border-top: solid 7px #ffffff;
+  border-right: solid 7px #ffffff;
+  width: 16px;
+  height: 16px;
   transform: rotate(-45deg);
 `
 

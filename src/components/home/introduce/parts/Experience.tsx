@@ -72,7 +72,7 @@ export const Experience: React.VFC = () => {
             UI/UXの改善に取り組んだ。
           </Text>
           <Text color="#515151" size="16px" weight="700" height="28px">
-            ウェブデザイナー | 2000.04 - 2008.12
+            ウェブデザイナー | 2000.04 - 2008.10
           </Text>
           <Text color="#515151" size="16px" weight="700" height="28px">
             株式会社 アートスタッフ

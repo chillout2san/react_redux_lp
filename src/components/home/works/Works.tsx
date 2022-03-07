@@ -27,17 +27,17 @@ export const Works: React.VFC = () => {
         <PictureCard
           path={FirstWork}
           header="MusubuLP"
-          paragraph="Coding/Gatsby"
+          paragraph="Coding / Gatsby"
         />
         <PictureCard
           path={SecondWork}
           header="MusubuLP"
-          paragraph="Coding/Gatsby"
+          paragraph="Coding / Gatsby"
         />
         <PictureCard
           path={ThirdWork}
           header="MusubuLP"
-          paragraph="Coding/Gatsby"
+          paragraph="Coding / Gatsby"
         />
       </ContentWrapper>
     </Wrapper>
